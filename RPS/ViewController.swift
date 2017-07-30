@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         case .draw:
             print("")
             appSign.text=""
-            statusLabel.text=""
+            statusLabel.text="Draw"
             rockSign.isHidden = true
             paperSign.setTitle("✋", for: .normal)
             scissorSign.isHidden = true
@@ -75,14 +75,14 @@ class ViewController: UIViewController {
         case .loose:
             print("")
             appSign.text=""
-            statusLabel.text=""
+            statusLabel.text="You Lost"
             rockSign.isHidden = true
             paperSign.setTitle("👎", for: .normal)
             scissorSign.isHidden = true
             playButton.isHidden = false
         case .win:
             appSign.text=""
-            statusLabel.text=""
+            statusLabel.text="You Won"
             rockSign.isHidden = true
             paperSign.setTitle("👍", for: .normal)
             scissorSign.isHidden = true
